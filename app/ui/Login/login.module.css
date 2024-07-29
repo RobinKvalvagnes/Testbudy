@@ -1,0 +1,52 @@
+/* Login.module.css */
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Background color for the page */
+    color: #333; /* Dark text color */
+    padding: 20px; /* Add padding to center align elements */
+    text-align: center; /* Center align text */
+  }
+  
+  .loginForm {
+    width: 100%;
+    max-width: 400px; /* Adjust width as needed */
+    border: 2px solid #ccc; /* Border color and thickness */
+    padding: 20px; /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* Box background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .formGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; /* Vertical spacing between form groups */
+  }
+  
+  .label {
+    width: 80px; /* Adjust width as needed */
+    margin-right: 12px; /* Adjust horizontal spacing between label and input */
+    text-align: right; /* Align label text to the right */
+    flex-shrink: 0; /* Prevent labels from shrinking */
+  }
+  
+  
+  .textCenter {
+    text-align: center; /* Center align text */
+  }
+  
+  .buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px; /* Adjust margin as needed */
+}
+
+.buttonContainer button {
+    margin-right: 10px; /* Adjust spacing between buttons */
+  }
