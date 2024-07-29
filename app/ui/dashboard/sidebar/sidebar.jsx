@@ -32,8 +32,8 @@ const menuItems = [
                 icon: <SiBlazemeter />,
             },
             {
-                title: 'Products2',
-                path: '/dashboard/products',
+                title: 'Azure',
+                path: '/dashboard/azure',
                 icon: <MdShoppingBag />,
             },
             {
