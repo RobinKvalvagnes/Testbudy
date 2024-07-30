@@ -4,7 +4,7 @@ import MenuLink from './menuLink/menuLink';
 import { BsFillPersonFill } from "react-icons/bs";
 import { SiBlazemeter } from "react-icons/si";
 import Image from 'next/image';
-
+import { LuTestTube2 } from "react-icons/lu";
 
 import {
     MdDashboard,
@@ -65,7 +65,7 @@ const Sidebar = () => {
         
         <div className={styles.container}>
         <div className={styles.logo}>
-        <Image src="/testbud_logo.png" alt="Logo" width={120} height={40} />
+        <LuTestTube2 size={50} />
 
         </div>
         <div className={styles.user}>
