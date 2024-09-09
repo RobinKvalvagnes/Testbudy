@@ -1,3 +1,56 @@
-.container{
-    
+.container {
+  background-color: var(--bgSoft); /* Light gray background */
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tableContainer {
+  background-color: var(--bgSoft); /* Light gray background for the table container */
+  border-radius: 8px; /* Rounded corners for the table container */
+  
+}
+
+.header {
+  background-color: var(--bgGray); /* Background color for the header */
+
+}
+
+.headerCell {
+  font-weight: bold;
+  color: rgb(255, 255, 255); /* White text color for header cells */
+}
+
+.testCaseRow {
+  background-color: var(--bgRow); /* Background color for rows */
+  border: 1px solid var(--bgBorder); /* Add border around each row */
+}
+
+.testCaseRow > * { /* Ensures all cells in the row have the same border */
+  border: 1px solid var(--bgBorder); /* Border color around cells */
+  color:rgb(255, 255, 255);  /* color for row text */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin: 5px 0; /* Optional: Add vertical margin for spacing */
+}
+
+.exstendButton {
+  color: var(--bgSoft); /* Text color for the button */
+  background-color: var(--bgPrimary); /* Background color for the button */
+}
+
+.exstendButton:hover {
+  background-color: var(--bgHover); /* Background color on hover for the button */
+}
+
+.table{
+  border-color: aliceblue;
 }

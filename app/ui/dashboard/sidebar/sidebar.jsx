@@ -1,4 +1,3 @@
-
 import styles from './sidebar.module.css';
 import MenuLink from './menuLink/menuLink';
 import { BsFillPersonFill } from "react-icons/bs";
@@ -37,8 +36,8 @@ const menuItems = [
                 icon: <MdShoppingBag />,
             },
             {
-                title: 'product3',
-                path: '/dashboard/transactions',
+                title: 'Demo',
+                path: '/dashboard/acunetix',
                 icon: <MdAttachMoney />,
             },
         ],
@@ -60,38 +59,41 @@ const menuItems = [
     },
 ];
 
-const Sidebar = () => {
+const Sidebar = ({ user }) => {
+    // Display user email if available, otherwise fallback to 'Guest'
+    const userEmail = user?.Email || 'Demo user';
+  
     return (
-        
-        <div className={styles.container}>
+      <div className={styles.container}>
         <div className={styles.logo}>
-        <LuTestTube2 size={50} />
-
+          <LuTestTube2 size={50} />
         </div>
         <div className={styles.user}>
-            <BsFillPersonFill className={styles.userImage} size={25} />
-            <div className={styles.userDetail}>
-                <span className={styles.username}>test</span>
-                <span className={styles.userTitle}>Software Developer</span>
-            </div>
+          <BsFillPersonFill className={styles.userImage} size={25} />
+          <div className={styles.userDetail}>
+            <span className={styles.username}>{userEmail}</span>
+            <span className={styles.userTitle}>Software Developer</span>
+          </div>
         </div>
         <ul className={styles.list}>
-            {menuItems.map((cat) => (
-                <li key={cat.title}>
-                    <span className={styles.cat}>{cat.title}</span>
-                    <ul>
-                        {cat.list.map((item) => (
-                            <li key={item.title}>
-                                <MenuLink item={item} />
-                            </li>
-                        ))}
-                    </ul>
-                </li>
-            ))}
+          {menuItems.map((cat) => (
+            <li key={cat.title}>
+              <span className={styles.cat}>{cat.title}</span>
+              <ul>
+                {cat.list.map((item) => (
+                  <li key={item.title}>
+                    <MenuLink item={item} />
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
         </ul>
-    </div>
+      </div>
     );
-};
+  };
+  
+  
 
 
 

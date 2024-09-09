@@ -51,14 +51,8 @@
     border-radius: 20px;
 }
 
-.sbomList{
-    margin-left: 20px;
+.ItemsReadyToTestList {
 
-
+    padding-top: 20px;
 }
 
-.sbomListTime{
-
-    margin-left: 5px;
-    color: var(--textSoft)
-}
