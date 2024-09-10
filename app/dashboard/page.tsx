@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/utils/supabase/server";
 import SBOMWarnings from '../ui/dashboard/sbomWarningList/SBOMWarnings'; // Import the new component
 import styles from '../ui/dashboard/dashboard.module.css';
-import Card from '../ui/dashboard/card/card';
+import Card from '@/app/ui/dashboard/card/card';
 import Rightbar from '../ui/dashboard/rightbar/rightbar';
 import "../ui/globals.css";
 
