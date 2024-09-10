@@ -1,27 +1,26 @@
-.container{
+.container {
     padding: 20px;
     border-radius: 10px;
     background-color: var(--bgSoft);
     display: flex;
-    align-content: center;
+    align-items: center; /* Changed from align-content to align-items */
     justify-content: space-between;
-    
 }
 
-.title{
-    color:var(--textSoft);
+.title {
+    color: var(--textSoft);
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
     gap: 20px;
-
+    position: relative; /* Ensure the menu is positioned relative for dropdown positioning */
 }
 
-.search{
+.search {
     display: flex;
     align-items: center;
     background-color: #2e374a;
@@ -33,11 +32,42 @@
 .input {
     background-color: transparent;
     border: none;
-    color: var(--text)
+    color: var(--text);
 }
 
-.icons{
+.icons {
     display: flex;
     gap: 20px;
+    position: relative; /* Ensure the dropdown is positioned relative to this container */
+}
 
+.dropdownWrapper {
+    position: relative; /* Ensure the dropdown menu is positioned relative to this container */
+    cursor: pointer; /* Change cursor to pointer for dropdown toggle */
+}
+
+.dropdownMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    top: 100%; /* Position it below the dropdownWrapper */
+    right: 0; /* Align with the right edge of the dropdownWrapper */
+    z-index: 1000; /* Ensure it appears above other elements */
+    min-width: 120px; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+
+.dropdownItem {
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdownItem:hover {
+    background-color: #f0f0f0;
 }

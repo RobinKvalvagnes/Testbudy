@@ -5,7 +5,7 @@ const { fetchTestRuns } = require('./azuredevops'); // Adjust the path as needed
 // Create a new instance of axios-mock-adapter
 const mock = new MockAdapter(axios);
 
-// Mock environment variables (replace with actual values or use dotenv if needed)
+// environment variables 
 const org = 'metaforce';
 const project = 'Metaforce%20Ticket%20Solution';
  // Tror det er denne den klaget på

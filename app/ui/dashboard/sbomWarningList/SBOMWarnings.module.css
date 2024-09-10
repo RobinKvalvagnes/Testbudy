@@ -1,0 +1,64 @@
+/* components/SBOMWarnings.module.css */
+
+.container {
+    padding: 20px;
+    background-color: var(--bgSoft);
+    border-radius: 20px;
+    
+  }
+  
+  .filter {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  
+  .filter button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--bgSoft);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .filter button:hover {
+    background-color: #2e374a;
+  }
+
+  .sbom {
+    margin-top: 10px;
+  }
+  
+  .sbomList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sbomList li {
+    margin-bottom: 10px;
+    padding: 5px;
+
+  }
+  
+  .sbomListTime {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .extendButton:hover {
+    background-color: #2e374a;
+
+  }
+
+  .extendButton {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2e343b;
+    color: white;
+    cursor: pointer;
+
+  }
